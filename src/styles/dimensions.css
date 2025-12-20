@@ -1,0 +1,9 @@
+:root {
+  .max-w-15r {
+    max-width: 15rem;
+  }
+
+  .max-w-75r {
+    max-width: 100rem;
+  }
+}

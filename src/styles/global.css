@@ -1,0 +1,134 @@
+@import "./buttons.css";
+@import "./devices.css";
+@import "./inputs.css";
+@import "./dimensions.css";
+@import "./links.css";
+@import "./modals.css";
+@import "./text-styles.css";
+
+:root {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+  }
+
+  .page {
+    background-image: url("/images/form1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 3rem;
+    width: 35rem;
+    height: 40rem;
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+  }
+
+  .white-bg-fat-border {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+  }
+
+  .white-bg-fat-border:focus {
+    outline: none;
+  }
+
+  .flat > div:not(.note-body) {
+    pointer-events: none;
+  }
+  .flat > .note-body {
+    transition: all ease 0.5s;
+    pointer-events: all;
+    box-shadow: 0 0 2rem rgba(165, 200, 209, 1);
+  }
+  .flat .edit-icon {
+    visibility: visible;
+  }
+
+  .note-body {
+    display: flex;
+    pointer-events: none;
+    background-image: url("/images/paper.png");
+    background-size: cover;
+    background-position: center;
+    flex-flow: column nowrap;
+    justify-content: top;
+    width: 25rem;
+    height: 35rem;
+    padding: 0.2rem;
+    border-radius: 3%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    filter: drop-shadow(0 1rem 1rem rgba(0, 0, 0, 0.5));
+
+    h1 {
+      flex: 1;
+      text-align: center;
+      font-size: 2rem;
+      margin: 0.1rem;
+    }
+
+    li {
+      padding: 0.075rem;
+      margin-left: 3rem;
+    }
+
+    .notes {
+      overflow-y: auto;
+      scrollbar-width: none;
+      scroll-snap-type: y mandatory;
+      scroll-snap-align: start;
+    }
+    .notes > li {
+      margin-left: 5rem;
+    }
+
+    .add-note {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+
+  .collapsed {
+    visibility: collapse;
+  }
+
+  .pointer-events-all {
+    pointer-events: all;
+  }
+
+  .custom-navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(25, 115, 155, 0.4);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-body {
+    overflow-y: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .custom-body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}

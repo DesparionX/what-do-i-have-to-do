@@ -1,0 +1,5 @@
+:root {
+  .modal-box {
+    filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.5));
+  }
+}

@@ -1,0 +1,29 @@
+:root {
+  .button-text {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  .button-text:hover {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .custom-nav-link {
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    stroke-width: 5px;
+    font-size: 1.2rem;
+  }
+
+  .custom-nav-link:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+
+  .mobile-nav-link {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 1));
+  }
+}

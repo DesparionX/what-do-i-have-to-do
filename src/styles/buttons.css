@@ -1,0 +1,70 @@
+:root {
+  button:focus,
+  a:focus {
+    outline: none !important;
+  }
+  .btn-add {
+    border-radius: 100%;
+    border: 0;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .edit-icon {
+    color: white;
+    transition: color ease-in-out 0.3s, filter ease 0.3s;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+  .edit-icon:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 150, 1);
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+
+  .save-icon {
+    color: white;
+    cursor: pointer;
+    transition: color ease-in-out 0.3s, filter ease 0.3s;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+
+  .save-icon:hover {
+    color: rgba(150, 255, 150, 1);
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+
+  .add-note-icon {
+    color: black;
+    cursor: pointer;
+    transition: color ease-in-out 0.3s, filter ease 0.3s;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+
+  .add-note-icon:hover {
+    color: rgba(150, 255, 150, 1);
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+
+  .delete-note-icon {
+    color: white;
+    cursor: pointer;
+    transition: color ease-in-out 0.3s, filter ease 0.3s;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+
+  .delete-note-icon:hover {
+    color: rgba(255, 150, 150, 1);
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+
+  .back-icon {
+    color: white;
+    cursor: pointer;
+    transition: color ease-in-out 0.3s, filter ease 0.3s;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+
+  .back-icon:hover {
+    color: rgba(90, 220, 255, 1);
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 1));
+  }
+}

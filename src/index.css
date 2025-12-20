@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@tailwind utilities;
+@plugin "daisyui" {
+  themes: all;
+}
+@import "./styles/global.css";
+
+html {
+  scrollbar-width: none;
+}

@@ -1,0 +1,64 @@
+:root {
+  .bottom-border-only {
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .bottom-border-only:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .no-border {
+    border: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .no-border:focus {
+    outline: none;
+  }
+
+  .bottom-border-1 {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .bottom-border-1:focus {
+    outline: none;
+    border-bottom: 2px inset rgba(0, 0, 0, 1);
+  }
+
+  .bottom-border-1:focus-within {
+    outline: none;
+    border-bottom: 2px inset rgba(0, 0, 0, 1);
+  }
+
+  .bottom-border-1:autofill {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .bottom-border-1:autofill:focus {
+    outline: none;
+    border-bottom: 2px inset rgba(0, 0, 0, 1);
+  }
+
+  /* REMOVES AUTOFILL STYLE */
+  input:-webkit-autofill {
+    -webkit-text-fill-color: black !important; /* text color */
+    transition: background-color 5000s ease-in-out 0s; /* hide yellow bg */
+  }
+
+  input:-webkit-autofill::first-line {
+    color: black; /* color of autofilled text */
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    outline: none;
+    border-bottom: 2px inset rgba(0, 0, 0, 1);
+    -webkit-text-fill-color: black !important; /* your text color */
+  }
+}

@@ -1,0 +1,77 @@
+:root {
+  /* Desktop devices */
+  @media (width >= 768px) {
+    .mobile-nav-link {
+      display: none;
+      visibility: hidden;
+    }
+    .pc-nav-link {
+      visibility: visible;
+    }
+  }
+
+  /* Mobile devices */
+  @media (width <= 768px) {
+    /* Nav Bar */
+    .mobile-nav-link {
+      margin-top: 0.5rem;
+      visibility: visible;
+    }
+    .pc-nav-link {
+      display: none;
+      visibility: collapse;
+    }
+    .logo {
+      left: 0;
+    }
+    .profile-link {
+      position: absolute;
+      left: 20%;
+    }
+
+    .custom-body {
+      margin-top: 0 !important;
+    }
+
+    .page {
+      margin-top: 2rem !important;
+      width: 28rem !important;
+    }
+
+    #login-form > button {
+      bottom: 7rem !important;
+    }
+
+    #register-form > button {
+      bottom: 6rem !important;
+    }
+
+    #form-fields {
+      margin-top: 3rem !important;
+    }
+
+    .hover-3d {
+      will-change: transform !important;
+      transform: none !important;
+      display: flex !important;
+      box-shadow: none !important;
+      perspective: none !important;
+    }
+
+    .note-body {
+      will-change: transform !important;
+      transition: scale 0.3s ease !important;
+      transform: scale(0.9);
+      box-shadow: none !important;
+      perspective: none !important;
+    }
+
+    #combo:hover > .checkbox {
+      visibility: visible !important;
+    }
+
+    .modal-box {
+      filter: none !important;
+    }
+  }
+}
