@@ -107,10 +107,10 @@ export default function Register() {
             />
             <button
               type="button"
-              onMouseDown={() => {
+              onPointerDown={() => {
                 setShowPassword(true);
               }}
-              onMouseUp={() => setShowPassword(false)}
+              onPointerUp={() => setShowPassword(false)}
               className="w-5 h-5 shrink-0 absolute right-2"
             >
               {showPassword ? (
@@ -134,10 +134,10 @@ export default function Register() {
             />
             <button
               type="button"
-              onMouseDown={() => {
+              onPointerDown={() => {
                 setShowPasswordConfirm(true);
               }}
-              onMouseUp={() => setShowPasswordConfirm(false)}
+              onPointerUp={() => setShowPasswordConfirm(false)}
               className="w-5 h-5 shrink-0 absolute right-2"
             >
               {showPasswordConfirm ? (
