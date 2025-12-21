@@ -70,7 +70,7 @@ export default function Register() {
           className="white-bg-fat-border ml-7 gap-4 items-center pt-6 pb-10 px-12"
         >
           <span className="relative flex flex-row items-center gap-2 h-10 w-52 bottom-border-1">
-            <UserIcon className="w-5 h-5 left-2 opacity-80" />
+            <UserIcon className="w-5 h-5 shrink-0 left-2 opacity-80" />
             <input
               type="text"
               className="no-border justify-center"
@@ -82,7 +82,7 @@ export default function Register() {
             />
           </span>
           <span className="relative flex flex-row items-center gap-2 h-10 w-52 bottom-border-1">
-            <EnvelopeIcon className="w-5 h-5 left-2 opacity-80" />
+            <EnvelopeIcon className="w-5 h-5 shrink-0 left-2 opacity-80" />
             <input
               type="text"
               className="no-border justify-center"
@@ -94,7 +94,7 @@ export default function Register() {
             />
           </span>
           <span className="relative flex flex-row items-center gap-2 h-10 w-52 bottom-border-1">
-            <KeyIcon className="w-5 h-5 left-2 opacity-80" />
+            <KeyIcon className="w-5 h-5 shrink-0 left-2 opacity-80" />
             <input
               type={showPassword ? "text" : "password"}
               id="password"
@@ -111,7 +111,7 @@ export default function Register() {
                 setShowPassword(true);
               }}
               onMouseUp={() => setShowPassword(false)}
-              className="w-5 h-5 absolute right-2"
+              className="w-5 h-5 shrink-0 absolute right-2"
             >
               {showPassword ? (
                 <EyeIcon focusable={false} />
@@ -121,7 +121,7 @@ export default function Register() {
             </button>
           </span>
           <span className="relative flex flex-row items-center gap-2 h-10 w-52 bottom-border-1">
-            <KeyIcon className="w-5 h-5 left-2 opacity-80" />
+            <KeyIcon className="w-5 h-5 shrink-0 left-2 opacity-80" />
             <input
               type={showPasswordConfirm ? "text" : "password"}
               id="passwordConfirm"
@@ -138,7 +138,7 @@ export default function Register() {
                 setShowPasswordConfirm(true);
               }}
               onMouseUp={() => setShowPasswordConfirm(false)}
-              className="w-5 h-5 absolute right-2"
+              className="w-5 h-5 shrink-0 absolute right-2"
             >
               {showPasswordConfirm ? (
                 <EyeIcon focusable={false} />

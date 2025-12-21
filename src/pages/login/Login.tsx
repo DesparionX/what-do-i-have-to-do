@@ -30,7 +30,7 @@ export default function LogIn() {
       >
         <div className="white-bg-fat-border ml-7 mt-20 gap-5 items-center pt-6 pb-8 px-12">
           <span className="relative flex flex-row items-center gap-2 h-10 w-52 bottom-border-1">
-            <UserIcon className="w-5 h-5 left-2 opacity-80" />
+            <UserIcon className="w-5 h-5 shrink-0 left-2 opacity-80" />
             <input
               type="text"
               id="email"
@@ -42,7 +42,7 @@ export default function LogIn() {
             />
           </span>
           <span className="relative flex flex-row items-center gap-2 h-10 w-52 bottom-border-1">
-            <KeyIcon className="w-5 h-5 left-2 opacity-80" />
+            <KeyIcon className="w-5 h-5 shrink-0 left-2 opacity-80" />
             <input
               type={showPassword ? "text" : "password"}
               id="password"
@@ -59,7 +59,7 @@ export default function LogIn() {
                 setShowPassword(true);
               }}
               onMouseUp={() => setShowPassword(false)}
-              className="w-5 h-5 absolute right-2"
+              className="w-5 h-5 shrink-0 absolute right-2"
             >
               {showPassword ? <EyeIcon /> : <EyeSlashIcon />}
             </button>
