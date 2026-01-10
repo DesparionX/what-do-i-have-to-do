@@ -22,8 +22,9 @@
 
   @media (max-width: 768px) {
     .custom-stroke {
-      -webkit-text-stroke: 0;
+      stroke: 1px rgba(0, 0, 0, 1) !important;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      letter-spacing: 0.2px;
     }
   }
 }
