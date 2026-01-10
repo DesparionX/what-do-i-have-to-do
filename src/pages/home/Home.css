@@ -1,0 +1,32 @@
+body {
+  overflow-y: hidden;
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: whitesmoke;
+  }
+  .snap-container {
+    height: 100dvh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .snap-section {
+    min-height: 100dvh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+
+    .snap-container {
+      margin-top: 5dvh;
+    }
+  }
+}

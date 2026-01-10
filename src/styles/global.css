@@ -5,6 +5,7 @@
 @import "./links.css";
 @import "./modals.css";
 @import "./text-styles.css";
+@import "./colors.css";
 
 :root {
   html,

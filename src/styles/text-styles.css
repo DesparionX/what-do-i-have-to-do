@@ -14,4 +14,9 @@
     color: rgba(25, 155, 195, 1);
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 1));
   }
+
+  .custom-stroke {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
 }
