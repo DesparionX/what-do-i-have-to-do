@@ -4,7 +4,7 @@ export function Home() {
   return (
     <div className="snap-container">
       <article className="max-w-350 text-center snap-section items-center">
-        <h1 className="custom-stroke">
+        <h1 className="custom-h1 custom-stroke">
           Welcome to my{" "}
           <p className="inline custom-blue">"What Do I Have To Do"</p> app !
         </h1>
@@ -24,7 +24,7 @@ export function Home() {
         </p>
       </article>
       <article className="max-w-350 text-center snap-section items-center">
-        <h1 className="custom-stroke">
+        <h1 className="custom-h1 custom-stroke">
           <p className="custom-blue">How it works ?</p>
         </h1>
         <div className="mt-5 max-w-300 justify-items-center">

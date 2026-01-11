@@ -61,4 +61,11 @@
     border-bottom: 2px inset rgba(0, 0, 0, 1);
     -webkit-text-fill-color: black !important; /* your text color */
   }
+
+  .bottom-border-1 input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    outline: none;
+    border: 0;
+    -webkit-text-fill-color: black !important; /* your text color */
+  }
 }
