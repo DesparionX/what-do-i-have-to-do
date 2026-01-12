@@ -1,7 +1,7 @@
 # 📋 What Do I Have To Do?
 
 <div align="center">
-  <img src="public/images/logo.png" alt="What Do I Have To Do Logo" width="200" height="200">
+  <img src="public/logo.png" alt="What Do I Have To Do Logo" width="200" height="200">
 
 ![React](https://img.shields.io/badge/React-19.2.0-blue.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue.svg)
